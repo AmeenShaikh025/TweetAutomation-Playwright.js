@@ -27,12 +27,12 @@ const { chromium, firefox, webkit, Browser, BrowserContext, Page } = require('pl
   if(isUsername == acceptedData) {
 
     // Fill [data-testid="ocfEnterTextTextInput"]
-    await page.locator('[data-testid="ocfEnterTextTextInput"]').fill('Fill-password');
+    await page.locator('[data-testid="ocfEnterTextTextInput"]').fill('Fill-username');
 
     // Press Enter
     await page.locator('[data-testid="ocfEnterTextTextInput"]').press('Enter');
     // Fill input[name="password"]
-    await page.locator('input[name="password"]').fill('Fill-userame');
+    await page.locator('input[name="password"]').fill('Fill-password');
     // Press Enter
     await page.locator('input[name="password"]').press('Enter');
 
